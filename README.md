@@ -257,3 +257,6 @@ Checking follow image_name for Non-UBI Based: rel-test/global-av-fluentd
 }
 ```
 **Note:** If Vendors/Partners are using UBI Dockerfile from RedHat, then mostly like the Labels must be present and defined other data accordingly.
+
+# Conclusion
+To summarize the purpose of this KB, the manual inspection of over 100 container images to determine their Red Hat UBI-based or third-party status was a time-consuming process. To streamline this process, that is why this knowledge base was created using a shell script, skopeo and REST API, reducing the time to just 2-3 minutes for 100 images. This knowledge base serves as a reference point if you plan to check 100's of images on a Quay private registry server and can be updated to meet different needs.
