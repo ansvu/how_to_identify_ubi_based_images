@@ -10,7 +10,7 @@ Also, this KB only aim to identify if container image is UBI or Non-UBI bases bu
 - Based on Quay 3.8 API version 
 - Create OAuth Applications Token [How to create Oauth App TOken](https://access.redhat.com/documentation/en-us/red_hat_quay/3/html/red_hat_quay_api_guide/using_the_red_hat_quay_api#create_oauth_access_token)
 - Skopeo tool [How to install skopeo](https://github.com/containers/skopeo/blob/main/install.md)  
-  sudo dnf -y install skopeo on RHEL8
+  `sudo dnf -y install skopeo on RHEL8`
 - Make sure connectivity to Quay register server reachable
 - Expect to use Curl to test out REST API first
 
@@ -225,7 +225,7 @@ rel-test/global-av-fluentd,non-ubi
 ```
 ### Start The Test Run with RAW On Screen
 ```diff
-+./check_ubi_base_images_v1.sh --repo-ns ava_5gc --cnf-prefix global- --log-type raw
++./check_ubi_base_images_v1-KB.sh --repo-ns ava_5gc --cnf-prefix "global-|rel-5gcore" --tag-type name --log-type raw
 Please be patient while checking images...  
 Checking follow image_name for Non-UBI Based: rel-ava/global-av-busybox
 {
